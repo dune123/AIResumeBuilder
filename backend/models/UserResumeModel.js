@@ -1,0 +1,60 @@
+const mongoose=require('mongoose');
+
+const UserResumeSchema=new mongoose.Schema({
+    title:{
+        type:String,
+        required:true,
+    },
+    resumeId:{
+        type:String,
+        required:true
+    },
+    userEmail:{
+        type:String,
+        required:true
+    },
+    userName:{
+        type:String,
+        required:true
+    },
+    firstName:{
+        type:String
+    },
+    lastName:{
+        type:String
+    },
+    jobTitle:{
+        type:String
+    },
+    email:{
+        type:String
+    },
+    address:{
+        type:String
+    },
+    phone:{
+        type:String
+    },
+    summery:{
+        type:String
+    },
+    themeColor:{
+        type:String
+    },
+    experience:[{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'UserExperience'
+    }],
+    education:[{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'UserEducation'
+    }],
+    skills:[{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'UserSkills'
+    }]
+})
+
+module.exports=mongoose.model('UserResume',UserResumeSchema);
+
+//themeColor:"#ff6666"
