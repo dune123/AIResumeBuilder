@@ -13,7 +13,7 @@ const corsOptions = {
 const app=express();
 
 app.use( cors({
-    origin: ["http://localhost:5173","https://airesumebuilderforyou.netlify.app/"], 
+    origin: ["https://airesumebuilderforyou.netlify.app/"], 
     credentials: true,
   }))
 app.use(bodyParser.json());
