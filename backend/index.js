@@ -12,7 +12,7 @@ const corsOptions = {
   };
 const app=express();
 
-app.use(cors())
+app.use(cors(corsOptions))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
