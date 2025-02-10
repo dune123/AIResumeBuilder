@@ -15,7 +15,7 @@ const View = () => {
   const GetParticularResume = async () => {
         
     try {
-        const response = await axios.get(`https://resumeaibuilder-4.onrender.com/api/userResume/getUserResumeId/${params.resumeId}`);
+        const response = await axios.get(`https://airesumebuilder-w42s.onrender.com/api/userResume/getUserResumeId/${params.resumeId}`);
         console.log(response.data);
         if (response.status === 200) {
             console.log("Resume Data:", response.data.userResume);
