@@ -28,7 +28,7 @@ const Summery = ({enabledNext}) => {
     setLoading(true);
     const updateData={summery:summery};
     try {
-        const response=await axios.put(`https://resumeaibuilder-4.onrender.com/api/userResume/UpdateResumeById/${params.resumeId}`,updateData);
+        const response=await axios.put(`https://airesumebuilder-w42s.onrender.com/api/userResume/UpdateResumeById/${params.resumeId}`,updateData);
 
         if(response.status===200){
             toast.success('successfully updated resume')

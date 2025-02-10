@@ -67,7 +67,7 @@ console.log("resumeInfo",resumeInfo)
       }
 
       const response = await axios.put(
-        `https://resumeaibuilder-6.onrender.com/api/userResume/updateExperience/${id}`, // Use resumeId correctly
+        `https://airesumebuilder-w42s.onrender.com/api/userResume/updateExperience/${id}`, // Use resumeId correctly
         { experience: experienceList }
       );
   

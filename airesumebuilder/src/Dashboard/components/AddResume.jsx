@@ -26,7 +26,7 @@ const AddResume = () => {
     }
 
     try {
-      const response=await axios.post('https://resumeaibuilder-4.onrender.com/api/userResume/createResume',data)
+      const response=await axios.post('https://airesumebuilder-w42s.onrender.com/api/userResume/createResume',data)
       console.log(response);
       if(response.status==200){
         toast.success("Resume Added Successfully");

@@ -50,7 +50,7 @@ const Education = ({ enabledNext }) => {
     const id=resumeInfo._id;
     try {
       const response = await axios.put(
-        `https://resumeaibuilder-4.onrender.com/api/userResume/updateEducation/${id}`,
+        `https://airesumebuilder-w42s.onrender.com/api/userResume/updateEducation/${id}`,
         { education: educationalList }
       );
 

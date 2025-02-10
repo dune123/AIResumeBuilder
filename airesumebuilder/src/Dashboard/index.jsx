@@ -14,7 +14,7 @@ const Dashboard = () => {
   
   async function GetResumeList(useremail) {
     try {
-      const response = await axios.get(`https://resumeaibuilder-4.onrender.com/api/userResume/getAllResume?email=${useremail}`);
+      const response = await axios.get(`http://localhost:3000/api/userResume/getAllResume?email=${useremail}`);
   
       
       if (response.status === 200) {

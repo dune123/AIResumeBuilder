@@ -39,7 +39,7 @@ const skillList = ({enabledNext}) => {
     const onSave=async()=>{
       const id=resumeInfo._id
         try {
-          const response=await axios.put(`https://resumeaibuilder-4.onrender.com/api/userResume/updateUserSkills/${id}`,{skills:skillList});
+          const response=await axios.put(`https://airesumebuilder-w42s.onrender.com/api/userResume/updateUserSkills/${id}`,{skills:skillList});
     
           if(response.status===200){
             toast.success("Skills saved successfully")

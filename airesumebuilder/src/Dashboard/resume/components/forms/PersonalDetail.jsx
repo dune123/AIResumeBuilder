@@ -37,7 +37,7 @@ const PersonalDetail = ({enabledNext}) => {
         const updateData=formData;
         const id=params.resumeId
         try {
-            const response=await axios.put(`https://resumeaibuilder-4.onrender.com/api/userResume/UpdateResumeById/${id}`,updateData);
+            const response=await axios.put(`https://airesumebuilder-w42s.onrender.com/api/userResume/UpdateResumeById/${id}`,updateData);
 
             if(response.status===200){
                 toast.success('successfully updated resume')
