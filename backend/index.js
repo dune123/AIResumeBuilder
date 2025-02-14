@@ -11,8 +11,7 @@ const app = express();
 
 // CORS Configuration
 const allowedOrigins = [
-  "https://airesumebuilderforyou.netlify.app", 
-  "http://localhost:3000"
+  "https://airesumebuilderforyou.netlify.app"
 ];
 
 app.use(cors({
